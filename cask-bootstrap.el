@@ -57,8 +57,10 @@
         (condition-case nil
             (mapc 'require cask-bootstrap-packages)
           (error
-           (add-to-list 'package-archives (cons "gnu" "https://elpa.gnu.org/packages/"))
-           (add-to-list 'package-archives (cons "melpa" "https://melpa.org/packages/"))
+           (add-to-list 'package-archives (cons "gnu"
+                                                "http://elpa.gnu.org/packages/"))
+           (add-to-list 'package-archives (cons "melpa"
+                                                "http://melpa.org/packages/"))
            (package-refresh-contents)
            (mapc
             (lambda (package)

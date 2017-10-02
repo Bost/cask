@@ -86,7 +86,7 @@ def install_cask(target_directory):
 
 def main():
     try:
-        install_cask(TARGET_DIRECTORY)
+        # install_cask(TARGET_DIRECTORY)
         bootstrap_cask(TARGET_DIRECTORY)
         success("""\
 Successfully installed Cask!  Now, add the cask binary to your $PATH:
